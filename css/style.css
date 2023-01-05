@@ -756,16 +756,17 @@ main {
 @media screen and (max-width: 767px) {
     .about .title {
         width: 110px;
-        padding: 0 0 50px 0;
+        padding: 0 0 40px 0;
     }
 
     .about_message {
-        padding-bottom: 60px;
-        font-size: 16px;
+        padding-bottom: 50px;
+        font-size: 15px;
+        letter-spacing: 1.75;
     }
 
     .about_item1 {
-        padding-bottom: 30px;
+        padding-bottom: 40px;
     }
 
     .about_name {
