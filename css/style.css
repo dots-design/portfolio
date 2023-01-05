@@ -1687,13 +1687,12 @@ footer {
     border: 1px solid #fff;
     border-radius: 3px;
     background-color: #fff;
-    font-family: fot-tsukuardgothic-std, sans-serif;
     box-sizing: border-box;
     opacity: 0.8;
+    font-family: fot-tsukuardgothic-std, sans-serif;
 }
 
 .submit_botton {
-    font-family: fot-tsukuardgothic-std, sans-serif;
     border-style: none;
     background-color: #938383;
     color: #ffffff;
@@ -1708,6 +1707,7 @@ footer {
     transition: all 0.4s ease-out;
     cursor: pointer;
     font-size: 16px;
+    font-family: fot-tsukuardgothic-std, sans-serif;
 }
 .submit_botton:hover {
     opacity: 0.5;
