@@ -782,6 +782,10 @@ main {
         font-size: 13px;
         letter-spacing: 0;
     }
+
+    .about_title_name {
+        padding-bottom: 10px;
+    }
 }
 
 /* servicesここから*/
