@@ -756,13 +756,13 @@ main {
 @media screen and (max-width: 767px) {
     .about .title {
         width: 110px;
-        padding: 0 0 40px 0;
+        padding: 0 0 20px 0;
     }
 
     .about_message {
         padding-bottom: 50px;
         font-size: 15px;
-        letter-spacing: 1.75;
+        line-height: 1.75;
     }
 
     .about_item1 {
@@ -881,6 +881,7 @@ main {
 
     .services_detail {
         font-size: 12px;
+        padding-bottom: 35px;
     }
 
     .services_container,
@@ -1380,18 +1381,18 @@ footer {
 
     .about_page_message {
         text-align: center;
-        line-height: 2;
+        line-height: 1.75;
         padding-bottom: 60px;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .about_page_col_2 {
         display: block;
-        padding: 0 20px;
+        padding: 0 30px;
     }
 
     .about_page_item2 {
-        padding-top: 30px;
+        padding-top: 30px 0 0 0;
     }
 
     /*  about moreここから*/
