@@ -1855,7 +1855,7 @@ footer {
 }
 
 .fade-in-up {
-    transform: translate(0, 40px);
+    transform: translate(0, 20px);
 }
 
 .scroll-in {
@@ -1926,44 +1926,5 @@ body.appear .splashbg {
     100% {
         transform-origin: top;
         transform: scaleY(0);
-    }
-}
-
-/*画面遷移の後現れるコンテンツ設定*/
-
-#container {
-    opacity: 0; /*はじめは透過0に*/
-}
-
-/*bodyにappearクラスがついたら出現*/
-body.appear #container {
-    animation-name: PageAnimeAppear;
-    animation-duration: 1s;
-    animation-delay: 0.8s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-@keyframes PageAnimeAppear {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.about_message {
-    animation-name: fadein;
-    animation-duration: 10s;
-}
-@keyframes fadein {
-    from {
-        opacity: 0;
-        transform: translatey(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translatey(0);
     }
 }
