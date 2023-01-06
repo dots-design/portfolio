@@ -1396,7 +1396,7 @@ footer {
     }
 
     .about_page_item2 {
-        padding-top: 30px 0 0 0;
+        padding: 30px 0 0 0;
     }
 
     /*  about moreここから*/
@@ -1932,5 +1932,29 @@ body.appear .splashbg {
     100% {
         transform-origin: top;
         transform: scaleY(0);
+    }
+}
+
+/*画面遷移の後現れるコンテンツ設定*/
+
+#container {
+    opacity: 0; /*はじめは透過0に*/
+}
+
+/*bodyにappearクラスがついたら出現*/
+body.appear #container {
+    animation-name: PageAnimeAppear;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes PageAnimeAppear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
