@@ -35,7 +35,20 @@
 
 <body>
     <div id="splash">
-        <div id="splash_logo"><img src="images/splash_logo@2x.png" alt=""></div>
+        <div id="splash_logo">
+            <!-- <img src="images/splash_logo@2x.png" alt=""> -->
+            <img class="js-fadeIn" src="images/splash_logo_1@2x.png" alt="">
+            <img class="js-fadeIn" src="images/splash_logo_2@2x.png" alt="">
+            <img class="js-fadeIn" src="images/splash_logo_3@2x.png" alt="">
+            <img class="js-fadeIn" src="images/splash_logo_4@2x.png" alt="">
+            <img class="js-fadeIn" src="images/splash_logo_5@2x.png" alt="">
+            <img class="js-fadeIn" src="images/splash_logo_6@2x.png" alt="">
+            <img class="js-fadeIn" src="images/splash_logo_7@2x.png" alt="">
+            <img class="js-fadeIn" src="images/splash_logo_8@2x.png" alt="">
+        </div>
+        <div id="splash_logo_2">
+            <img class="js-fadeIn2" src="images/splash_logo_9@2x.png" alt="">
+        </div>
     </div>
     <div class="splashbg"></div>
 
@@ -46,7 +59,9 @@
                 <div class="fv_sp_only">
                     <img src="images/fv_sp@2x-100.jpg" alt="">
                 </div>
-                <div class="header_ico"><img src="images/apple-ring_top@2x.png" alt=""></div>
+                <div class="header_ico">
+                    <img src="images/apple-ring_top@2x.png" alt="">
+                </div>
                 <h1 class="header_ttl"><img src="images/dot.s.design_top@2x.png" alt="dots design"></h1>
                 <div class="header_name">Web・グラフィックデザイン</div>
                 <div class="header_menu">
@@ -285,6 +300,20 @@
 
     <script>
         $(function () {
+            $('.js-fadeIn, .js-fadeIn2').hide();
+
+            setTimeout(function () {
+                $('.js-fadeIn').each(function (index) {
+                    setTimeout(function () {
+                        $('.js-fadeIn').eq(index).fadeIn(500);
+                    }, index * 200);
+                });
+            }, 500);
+
+            setTimeout(function () {
+                $('.js-fadeIn2').fadeIn(1000);
+            }, 2000);
+
             //この中に記述 
             $('.pc_btn, .pc_nav li').click(function () {
                 $('.pc_nav').fadeToggle();
@@ -368,7 +397,6 @@
             });
         });
 
-
         let fadeInTarget = document.querySelectorAll('.fade-in');
         window.addEventListener('scroll', () => {
             for (let i = 0; i < fadeInTarget.length; i++) {
@@ -386,7 +414,7 @@
             $("#splash-logo").delay(1200).fadeOut('slow');//ロゴを1.2秒でフェードアウトする記述
 
             //=====ここからローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
-            $("#splash").delay(1500).fadeOut('slow', function () {//ローディングエリア（splashエリア）を1.5秒でフェードアウトする記述
+            $("#splash").delay(3000).fadeOut('slow', function () {//ローディングエリア（splashエリア）を1.5秒でフェードアウトする記述
 
                 $('body').addClass('appear');//フェードアウト後bodyにappearクラス付与
 
@@ -398,12 +426,10 @@
                 //この中に動かしたいJSを記載
             });
             //=====ここまで背景が伸びた後に動かしたいJSをまとめる
-
         });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
 
 
 </body>

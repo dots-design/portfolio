@@ -93,6 +93,11 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.js-fadeIn {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 .header_ttl {
     top: 26vw;
@@ -1882,16 +1887,45 @@ footer {
     z-index: 999;
     background: #f2f2f2;
     text-align: center;
-    color: #fff;
 }
 
 /* Loading画像中央配置　*/
 #splash_logo {
     position: absolute;
-    top: 50%;
+    top: 18vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+}
+
+#splash_logo_2 {
+    position: absolute;
+    top: 28vw;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
+}
+
+/* header レスポンシブ */
+@media screen and (max-width: 1100px) {
+    #splash_logo {
+        top: 38vw;
+    }
+
+    #splash_logo_2 {
+        top: 54vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #splash_logo {
+        top: 52vw;
+        width: 86px;
+    }
+
+    #splash_logo_2 {
+        top: 88vw;
+    }
 }
 
 /*画面遷移アニメーション*/

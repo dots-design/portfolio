@@ -186,6 +186,8 @@
     }
 
     .works_pages_outline dd {
+        display: flex;
+        align-items: center;
         width: 65%;
         padding: 16px 8px;
         font-size: 15px;
