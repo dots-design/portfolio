@@ -533,7 +533,7 @@ main {
 }
 
 #services {
-    padding: 150px 0px 0px 0px;
+    padding: 120px 0px 0px 0px;
 }
 
 #works {
@@ -801,7 +801,7 @@ main {
 .services_tool {
     text-align: center;
     font-size: 14px;
-    padding: 80px 0 30px 0;
+    padding: 50px 0 30px 0;
     font-weight: bold;
 }
 
@@ -919,7 +919,7 @@ main {
 .works .title {
     width: 91px;
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 .works_detail {
     text-align: center;
